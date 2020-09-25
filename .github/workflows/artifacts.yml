@@ -12,13 +12,13 @@ jobs:
       
     - run: echo world > path/to/artifact/custom.txt
 
-    - uses: actions/upload-artifact@master
+    - uses: actions/upload-artifact@main
       with:
         name: artifact
         path: path/to/artifact/notcustom.txt
         
     - name: “upload custom”
-      uses: actions/upload-artifact@master
+      uses: actions/upload-artifact@main
       with:
         name: cutsom
         path: path/to/artifact/custom.txt
