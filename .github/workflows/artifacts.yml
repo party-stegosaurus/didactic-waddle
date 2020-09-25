@@ -17,8 +17,9 @@ jobs:
         name: artifact
         path: path/to/artifact/notcustom.txt
         
-    - uses: actions/upload-artifact@master
+    - name: “upload custom”
+      uses: actions/upload-artifact@master
       with:
-        name: custom retention artifact
+        name: cutsom
         path: path/to/artifact/custom.txt
         retention-days: 1
